@@ -8,6 +8,7 @@ export default function App() {
       <UserDetails label="Name" value="Thabo Lebese" />
       <UserDetails label="Phone Number" value="2665987654" />
       <UserDetails label="Gender" value="Male" />
+      <UserDetails label="Address" value="Ha C-Point" />
       <StatusBar style="auto" />
     </View>
   );
