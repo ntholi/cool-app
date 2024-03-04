@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import UserDetails from './UserDetails';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <UserDetails label="Name" value="Thabo Lebese" />
+      <UserDetails label="Phone Number" value="2665987654" />
+      <UserDetails label="Gender" value="Male" />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'white',
+    padding: 16
   },
 });
